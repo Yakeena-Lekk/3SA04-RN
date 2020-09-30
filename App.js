@@ -11,10 +11,18 @@ export default function App() {
 
   return (        
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={ZipCodeScreen} />
+    
+      <Stack.Navigator >
+        <Stack.Screen style= {styles.font} name="Home" component={ZipCodeScreen} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
       </Stack.Navigator> 
+
     </NavigationContainer>       
   );
 }
+
+const styles = StyleSheet.create({
+  font:{
+    fontSize : 50,
+  }
+});
